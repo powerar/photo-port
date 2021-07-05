@@ -4,6 +4,11 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
 
+  const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
+
   return (
     <header className="flex-row px-1">
       <h2>
